@@ -43,6 +43,9 @@ const Login = () => {
         }
         setLoading(true);
         try {
+            console.log(`${API_URL}/api/seguridad/login`)
+            console.log(formData)
+            console.log(JSON.stringify(formData))
             fetch(
                 `${API_URL}/api/seguridad/login`, 
                 {
